@@ -110,12 +110,12 @@ async function main()
         if (!(prevLink == link.value))
         {
             videoData = await request(link.value)
-            thumbnail = new reactionSlop(videoData, chooseRandomly(reactorsChannel))
         }
         else
         {
             prevLink = link.value
         }
+        thumbnail = new reactionSlop(videoData, chooseRandomly(reactorsChannel))
         thumbnail.generateTitle()
         thumbnail.generateViews()
         thumbnail.generateThumbnail()
