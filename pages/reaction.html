@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../style.css" rel="stylesheet">
+        <title>Reaction slop generator</title>
+    </head>
+    <body>
+
+        <nav>
+            <ol>
+                <li class="active"><a href="reaction.html">Reaction Slop</a></li>
+                <li><a href="../index.html">Commentary Slop</a></li>
+            </ol>
+        </nav>
+
+        <div id="youtube-video">
+
+            <div id="thumbnail-section">
+                <canvas id="thumbnail-image" width="640" height="360"></canvas>
+            </div>
+
+            <div id="wrapper">
+
+                <span id="title-pfp">
+                    <img id="pfp-image" width="75" height="75">
+                </span>
+                
+                <span id="right">
+                    <div id="title-section">
+                        <span id="title-name"></span>
+                    </div>
+
+                    <div id="channel-section">
+                        <div id="channel-name"></div>
+                        <div>
+                            <span id="video-views"></span>
+                            <span id="video-date"></span>
+                        </div>
+                    </div>
+                </span>
+
+            </div>
+
+        </div>
+        <div id="generate-button">
+            <button id="generate">Generate</button>
+            <div id="link-wrapper">
+                Enter youtube link:
+                <input type="text" id="yt-link">
+            </div>
+            
+        </div>
+        <script src="reaction.js"></script>
+    </body>
+</html>
